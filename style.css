@@ -1,0 +1,111 @@
+/* Space-Themed Background */
+body {
+    background: radial-gradient(circle, #0a0a2a, #000), url('https://cdn.britannica.com/29/148329-050-269A9EFE/night-sky-Milky-Way-Galaxy.jpg');
+    background-blend-mode: overlay; 
+    background-size: cover; 
+    background-position: center; 
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.5);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #0ff;
+}
+
+#instruction {
+    font-size: 1.2rem;
+    color: #00d9ff; /* Light blue color for the text */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 217, 255, 0.8); /* Adds a glowing effect */
+}
+
+/* Input and Select Styling */
+input, select {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 217, 255, 0.5);
+}
+
+/* Style the dropdown text */
+select {
+    color: darkblue; /* Change text color of the selected option */
+    background-color: white; /* Ensure background is visible */
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 80%;
+    cursor: pointer;
+}
+
+/* Style the options inside the dropdown */
+select option {
+    color: darkblue; /* Make all dropdown text dark blue */
+    background-color: white; /* Background stays white for contrast */
+}
+
+
+/* Dropdown Arrow Color */
+select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(45deg, #00d9ff, #0a0aff);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 217, 255, 0.8);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0a0aff, #00d9ff);
+    box-shadow: 0px 0px 15px rgba(0, 217, 255, 1);
+}
+
+/* Output Message Styling */
+#output {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00d9ff;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}

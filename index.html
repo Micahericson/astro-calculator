@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
      <!-- Write your markup here  -->
+<h1>Astro Weight Calculator</h1>
+    
+<p id="instruction">Pick a planet in the Milky Way and see how much you weigh!</p>
+
+<input id="user-weight" type="text" placeholder="Weight (lbs)">
+
+<select id="planets"></select>
+
+<p id="output"></p>
+
+<button id="calculate-button">Calculate</button>
 
     <script src="main.js" charset="utf-8"></script>
   </body>
