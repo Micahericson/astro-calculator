@@ -1,4 +1,4 @@
-/* Milkyway galaxy Background */
+
 body {
     background: radial-gradient(circle, #0a0a2a, #000), url('https://cdn.britannica.com/29/148329-050-269A9EFE/night-sky-Milky-Way-Galaxy.jpg');
     background-blend-mode: overlay; 
@@ -10,7 +10,7 @@ body {
     padding: 50px;
 }
 
-/* Container Styling */
+
 .container {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -20,7 +20,7 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.5);
 }
 
-/* Heading */
+
 h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -29,13 +29,13 @@ h1 {
 
 #instruction {
     font-size: 1.2rem;
-    color: #00d9ff; /* Light blue color for the text */
+    color: #00d9ff; 
     margin-bottom: 20px;
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 217, 255, 0.8); /* Adds a glowing effect */
 }
 
-/* Input and Select Styling */
+
 input, select {
     font-size: 1.2rem;
     padding: 10px;
@@ -49,10 +49,10 @@ input, select {
     box-shadow: 0px 0px 10px rgba(0, 217, 255, 0.5);
 }
 
-/* Style the dropdown text */
+
 select {
-    color: darkblue; /* Change text color of the selected option */
-    background-color: white; /* Ensure background is visible */
+    color: darkblue; 
+    background-color: white; 
     font-size: 1.2rem;
     padding: 10px;
     border-radius: 5px;
@@ -62,20 +62,20 @@ select {
     cursor: pointer;
 }
 
-/* Style the options inside the dropdown */
+
 select option {
-    color: darkblue; /* Make all dropdown text dark blue */
+    color: darkblue;
     background-color: white; /* Background stays white for contrast */
 }
 
 
-/* Dropdown Arrow Color */
+
 select {
     appearance: none;
     cursor: pointer;
 }
 
-/* Buttons */
+
 button {
     background: linear-gradient(45deg, #00d9ff, #0a0aff);
     border: none;
@@ -94,7 +94,7 @@ button:hover {
     box-shadow: 0px 0px 15px rgba(0, 217, 255, 1);
 }
 
-/* Output Message Styling */
+
 #output {
     margin-top: 20px;
     font-size: 1.5rem;
@@ -103,7 +103,7 @@ button:hover {
     text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .container {
         width: 80%;
