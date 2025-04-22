@@ -30,9 +30,26 @@ function handleClickEvent(e) {
     
     let userWeight = parseFloat(document.getElementById("user-weight").value);  
     let planetName = document.getElementById("planets").value; 
-    let result = calculateWeight(userWeight, planetName);
-   
-    document.getElementById("output").textContent = 
-    `If you were on ${planetName}, you would weigh ${result}lbs!`;
+    let result = Math.round(calculateWeight(userWeight, planetName));
+    let start = userWeight;
+    let end = result;
+    let current = start;
+    let steps = 60; // fps
+    let increment = (end - start) / steps;
+    let output = document.getElementById("output");
+    let frame = 0;
+    
+    let interval = setInterval(() => {
+      current += increment;
+      frame++;
+    
+      // Stop when done
+      if (frame >= steps) {
+        current = end;
+        clearInterval(interval);
+      }
+    
+      output.textContent = `If you were on ${planetName}, you would weigh ${Math.round(current)} lbs!`;
+    }, 16);
 }   
     document.getElementById("calculate-button").onclick = handleClickEvent;
